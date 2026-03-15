@@ -1,0 +1,80 @@
+_wandb:
+    value:
+        cli_version: 0.25.1
+        e:
+            jx278ykxtlhi7092zoxtif4o3ulm8co2:
+                codePath: DLA-Lab1.ipynb
+                codePathLocal: DLA-Lab1.ipynb
+                cpu_count: 12
+                cpu_count_logical: 24
+                cudaVersion: "13.2"
+                disk:
+                    /:
+                        total: "1081101176832"
+                        used: "121174159360"
+                email: marco.destefano1@edu.unifi.it
+                executable: /home/deste00/miniconda3/envs/FML/bin/python
+                git:
+                    commit: 04252bd1a3250774c902627a92d2815c3f148e16
+                    remote: git@github.com:Deste-user/Deep-Learning-Application.git
+                gpu: NVIDIA GeForce RTX 5070 Ti
+                gpu_count: 1
+                gpu_nvidia:
+                    - architecture: Blackwell
+                      memoryTotal: "17094934528"
+                      name: NVIDIA GeForce RTX 5070 Ti
+                      uuid: GPU-98ab8123-16b8-2d26-cd38-549d2db30080
+                host: DeStefano
+                memory:
+                    total: "27311370240"
+                os: Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.35
+                program: DLA-Lab1.ipynb
+                python: CPython 3.13.9
+                root: /home/deste00/DLA_Linux
+                startedAt: "2026-03-15T22:17:22.840945Z"
+                writerId: jx278ykxtlhi7092zoxtif4o3ulm8co2
+        m: []
+        python_version: 3.13.9
+        t:
+            "1":
+                - 1
+                - 5
+                - 41
+                - 53
+            "2":
+                - 1
+                - 5
+                - 41
+                - 53
+            "3":
+                - 2
+                - 13
+                - 16
+            "4": 3.13.9
+            "5": 0.25.1
+            "8":
+                - 1
+            "12": 0.25.1
+            "13": linux-x86_64
+classificator:
+    value: |-
+        Sequential(
+          (0): Linear(in_features=2048, out_features=516, bias=True)
+          (1): ReLU()
+          (2): Dropout(p=0.5, inplace=False)
+          (3): Linear(in_features=516, out_features=43, bias=True)
+        )
+early_stop_max:
+    value: 5
+epochs:
+    value: 40
+freezing:
+    value: false
+learning_rate:
+    value: 5e-05
+num_classes:
+    value: 43
+optimizer:
+    value: Adam
+run_name:
+    value: ResNet50_Linear_All

@@ -1,0 +1,39 @@
+{
+  "os": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.35",
+  "python": "CPython 3.13.9",
+  "startedAt": "2026-03-11T20:12:56.016420Z",
+  "program": "DLA-Lab1.ipynb",
+  "codePath": "DLA-Lab1.ipynb",
+  "codePathLocal": "DLA-Lab1.ipynb",
+  "git": {
+    "remote": "git@github.com:Deste-user/Deep-Learning-Application.git",
+    "commit": "5ccd1ec9ce5080cb9a9d85f9ad5c394d32801952"
+  },
+  "email": "marco.destefano1@edu.unifi.it",
+  "root": "/home/deste00/DLA_Linux",
+  "host": "DeStefano",
+  "executable": "/home/deste00/miniconda3/envs/FML/bin/python",
+  "cpu_count": 12,
+  "cpu_count_logical": 24,
+  "gpu": "NVIDIA GeForce RTX 5070 Ti",
+  "gpu_count": 1,
+  "disk": {
+    "/": {
+      "total": "1081101176832",
+      "used": "121068859392"
+    }
+  },
+  "memory": {
+    "total": "27311366144"
+  },
+  "gpu_nvidia": [
+    {
+      "name": "NVIDIA GeForce RTX 5070 Ti",
+      "memoryTotal": "17094934528",
+      "architecture": "Blackwell",
+      "uuid": "GPU-98ab8123-16b8-2d26-cd38-549d2db30080"
+    }
+  ],
+  "cudaVersion": "13.2",
+  "writerId": "ar3btv0igs8liplz0sklggcz71vzgrya"
+}

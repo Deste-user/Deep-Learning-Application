@@ -1,0 +1,64 @@
+_wandb:
+    value:
+        cli_version: 0.25.1
+        e:
+            qcw3nktkkj0fxo1recvqgyx1x4c3ey6c:
+                codePath: DLA-Lab1.ipynb
+                codePathLocal: DLA-Lab1.ipynb
+                cpu_count: 12
+                cpu_count_logical: 24
+                cudaVersion: "13.2"
+                disk:
+                    /:
+                        total: "1081101176832"
+                        used: "121068920832"
+                email: marco.destefano1@edu.unifi.it
+                executable: /home/deste00/miniconda3/envs/FML/bin/python
+                git:
+                    commit: 5ccd1ec9ce5080cb9a9d85f9ad5c394d32801952
+                    remote: git@github.com:Deste-user/Deep-Learning-Application.git
+                gpu: NVIDIA GeForce RTX 5070 Ti
+                gpu_count: 1
+                gpu_nvidia:
+                    - architecture: Blackwell
+                      memoryTotal: "17094934528"
+                      name: NVIDIA GeForce RTX 5070 Ti
+                      uuid: GPU-98ab8123-16b8-2d26-cd38-549d2db30080
+                host: DeStefano
+                memory:
+                    total: "27311366144"
+                os: Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.35
+                program: DLA-Lab1.ipynb
+                python: CPython 3.13.9
+                root: /home/deste00/DLA_Linux
+                startedAt: "2026-03-11T20:14:58.096789Z"
+                writerId: qcw3nktkkj0fxo1recvqgyx1x4c3ey6c
+        m: []
+        python_version: 3.13.9
+        t:
+            "1":
+                - 1
+                - 5
+                - 41
+                - 53
+            "2":
+                - 1
+                - 5
+                - 41
+                - 53
+            "3":
+                - 2
+                - 13
+                - 16
+            "4": 3.13.9
+            "5": 0.25.1
+            "8":
+                - 1
+            "12": 0.25.1
+            "13": linux-x86_64
+architecture:
+    value: ResNet18
+epochs:
+    value: 40
+learning_rate:
+    value: 0.001
