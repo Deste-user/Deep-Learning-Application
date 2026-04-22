@@ -9,10 +9,9 @@ from tqdm import tqdm
 from transformers import AutoTokenizer, AutoModelForSeq2SeqLM
 import numpy as np
 
-
-DATASET_PATH = "adityajn105/flickr8k"
-DATASET_FOLDER = ".DATA/dataset"
-EMBEDDINGS_FOLDER = ".DATA/embeddings"
+DATASET_PATH = "jxie/flickr8k"
+DATASET_FOLDER = "./DATA/dataset"
+EMBEDDINGS_FOLDER = "./DATA/embeddings"
 EMBEDDINGS_FILE = os.path.join(EMBEDDINGS_FOLDER, "db.pkl")
 
 def load_model(device):
@@ -34,11 +33,11 @@ def create_embeddings(model, preprocess,device):
             return pickle.load(f)
 
     print("Download the Dataset from Hugging Face!")
-    os.makedirs(DATASET_FOLDER)
+    os.makedirs(DATASET_FOLDER, exist_ok=True)
     dataset = load_dataset(DATASET_PATH, split="train", cache_dir=DATASET_FOLDER)
 
     print("Create All Embeddings!")
-    os.makedirs(os.path.dirname(EMBEDDINGS_FOLDER), exist_ok=True)
+    os.makedirs(EMBEDDINGS_FOLDER, exist_ok=True)
 
     db_features = []
     image_list = []
@@ -82,13 +81,17 @@ def retrival_image(text, num_imgs):
 
 with gr.Blocks() as app:
     gr.Markdown("# CLIP Retrievial System")
-    with gr.Row():
-        txt_input = gr.Textbox(label="What are you looking for?")
-        num_input = gr.Slider(value=2, minimum=1, maximum=10, step=1)
+    with gr.Column():
+        with gr.Row():
+            txt_input = gr.Textbox(label="What are you looking for?")
+            placeholder="Es. Un cucciolo che gioca nella neve..."
+            num_input = gr.Slider(value=2, minimum=1, maximum=10, step=1, label="Number of Images")
+            lines=2
+        gr.Column(scale=1)    
+        confirm_button = gr.Button("Confirm" ,size="sm", scale=1)
+        gr.Column(scale=1)
 
-    confirm_button = gr.Button("Confirm")
-
-    output_gallery = gr.Gallery(label="Risults", columns=3)
+    output_gallery = gr.Gallery(label="Results", columns=4, height="auto", show_label=False)
 
     confirm_button.click(fn=retrival_image, inputs = [txt_input,num_input], outputs=output_gallery, api_name="print_hello")
 
@@ -97,3 +100,7 @@ if __name__ == "__main__":
     model, preprocess, tokenizer, translation_model = load_model(device)
     db = create_embeddings(model, preprocess,device)
     app.launch()
+
+
+
+
