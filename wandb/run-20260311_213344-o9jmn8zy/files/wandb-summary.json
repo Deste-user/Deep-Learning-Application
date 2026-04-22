@@ -1,1 +1,0 @@
-{"Train/Loss":0.6864577382802963,"Test/Accuracy":0.5314330958036422,"_runtime":211,"Validation/Precision":0.4584713484105894,"_wandb":{"runtime":211},"_timestamp":1.7732614200728848e+09,"_step":24,"Validation/Loss":0.7789432321275983,"Validation/F1_Score":0.4393323159417449}

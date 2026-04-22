@@ -1,1 +1,0 @@
-{"Validation/Precision":0.4589039729550836,"Validation/F1_Score":0.43914159081560644,"_timestamp":1.7732617445280373e+09,"_runtime":265,"_step":39,"Validation/Loss":0.7065817884036473,"Test/Accuracy":0.5240696753760887,"Train/Loss":0.5957365721464157,"_wandb":{"runtime":265}}
